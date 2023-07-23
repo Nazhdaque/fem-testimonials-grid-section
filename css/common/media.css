@@ -1,0 +1,11 @@
+@media (width <= 576px) {
+	.sm--col-1 {
+		--col: 1;
+	}
+	.sm--col-span-0 {
+		grid-column: auto;
+	}
+	.sm--order-0 {
+		order: 0;
+	}
+}

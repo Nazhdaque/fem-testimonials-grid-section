@@ -1,0 +1,29 @@
+:root {
+	--ff-rg: "Barlow Semi Condensed", sans-serif;
+
+	--fw-md: 500;
+	--fw-sb: 600;
+
+	--fs-sm: 0.6875rem;
+	--fs-rg: 0.8125rem;
+	--fs-lg: 1.275rem;
+
+	--lh-rg: 1.5;
+	--lh-sm: 1.1;
+}
+
+/* text */
+.txt-sm {
+	font-size: var(--fs-sm);
+}
+.txt-rg {
+	font-size: var(--fs-rg);
+}
+.txt-lg {
+	font-size: var(--fs-lg);
+	line-height: var(--lh-sm);
+}
+
+.semi-bold {
+	font-weight: var(--fw-sb);
+}

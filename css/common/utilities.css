@@ -1,0 +1,38 @@
+.grid-x {
+	--width: var(--max-content-width);
+	--col-x: repeat(
+		auto-fit,
+		minmax(
+			min(
+				(
+					((var(--width) - var(--gap) * (var(--col) - 1)) / var(--col)) *
+						var(--shrink)
+				),
+				100%
+			),
+			1fr
+		)
+	);
+
+	display: grid;
+	grid-template-columns: var(--col-x);
+}
+
+/* --- */
+.col-span-2 {
+	grid-column: span 2;
+}
+.row-span-2 {
+	grid-row: span 2;
+}
+.order-1 {
+	order: 1;
+}
+
+/* --- */
+.opacity-50 {
+	opacity: 0.5;
+}
+.opacity-70 {
+	opacity: 0.7;
+}

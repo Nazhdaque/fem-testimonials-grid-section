@@ -1,0 +1,32 @@
+:where(*, *::before, *::after) {
+	box-sizing: border-box !important;
+	margin: 0;
+	padding: 0;
+}
+
+:where(ul, ol) {
+	list-style: none;
+}
+
+q {
+	quotes: none;
+}
+
+*::selection {
+	color: var(--clr-bg);
+	background-color: var(--clr-txt);
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: var(--ff-rg);
+	font-weight: var(--fw-rg);
+	font-size: var(--fs-rg);
+	color: var(--clr-n-800-solid);
+	line-height: var(--lh-rg);
+	background-color: var(--clr-n-100-solid);
+}

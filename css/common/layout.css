@@ -1,0 +1,15 @@
+.layout-body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: grid;
+	place-content: center;
+}
+
+.layout-center {
+	display: grid;
+	grid-template-columns: 1fr minmax(min-content, var(--max-content-width)) 1fr;
+}
+
+.layout-center > * {
+	grid-column: 2;
+}
